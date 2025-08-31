@@ -40,9 +40,9 @@ const Card = () => {
                         <br/><br/>
                         For now I am keen on keeping up with the pace of the career while I develop my skills on backend development (even tho this web is purely front and actually done by me...).
                         <br/><br/>
-                        Among some of my skills I am used to development in <text className="text-white text-xs md:text-s lg:text-xl">Python, C, C++, Java/Typescript</text> and the <text className="text-white text-xs md:text-s lg:text-xl">CSS+HTML</text> webpack, also I ve tasted React, Tailwindcss, Django and some other frameworks.
-                        But I must say that my most powerfull traits are my proactivity and lidership, I am always thinking on things to do in order to succed in what I want to achieve,
-                        always taking the logical perspective.
+                        Among some of my skills, I am used to work with <text className="text-white text-xs md:text-s lg:text-xl">Python, C, C++, Javascript/Typescript</text> and the <text className="text-white text-xs md:text-s lg:text-xl">CSS+HTML</text> webpack, also I ve tasted  <text className="text-white text-xs md:text-s lg:text-xl">React, Tailwindcss, Django</text> and some other frameworks.
+                        But I must say that my most powerfull traits are my proactivity and leadership, I am always thinking on things to do in order to succed in what I want to achieve,
+                        always trying to take a logical perspective.
                         <br/><br/>
                         I am leaving you my social media and github below, where you'll be able to find some of the things I've been doing, there are so many things coming in the future... Hope you like my work and feel free to contact me for anything!
                     </p>
@@ -65,6 +65,11 @@ const Card = () => {
                         <div className="w-[80%] max-w-10 in-hover:shadow-2xl hover:shadow-white">
                             <a href="https://x.com/davd19_" target="blank">
                                 <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-white-icon.png" alt="x" />
+                            </a>
+                        </div>
+                        <div className="w-[80%] max-w-10 in-hover:shadow-2xl hover:shadow-white">
+                            <a href="https://www.linkedin.com/in/david-s%C3%A1nchez-palomino-a06671322/" target="blank">
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png" alt="x" />
                             </a>
                         </div>
                     </div>
