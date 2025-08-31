@@ -12,7 +12,7 @@ export const Layout = () => {
 
 const Card = () => {
     return (
-        <div className="outline-1 outline-stone-900 w-3/4 shadow-2xl pt-20">
+        <div className="outline-1 outline-stone-900 w-4/4 md:w-3/4 lg:w-3/4 shadow-2xl pt-20">
             <div>
                 <div className={styles.centered2}>
                     <div className="max-w-78 mb-5">
