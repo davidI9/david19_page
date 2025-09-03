@@ -3,7 +3,7 @@ import { useState } from "react"
 
 export const Layout = () => {
     return (
-        <div className="bg-black">
+        <div id="start" className="bg-black">
             <div className={styles.centered}>
                 <Header/>
                 <Card/>
@@ -14,7 +14,7 @@ export const Layout = () => {
 
 const Card = () => {
     return (
-        <div className="outline-1 outline-stone-900 w-4/4 md:w-3/4 lg:w-3/4 shadow-2xl pt-20">
+        <div className="outline-1 outline-stone-900 w-4/4 md:w-3/4 lg:w-3/4 shadow-2xl pt-35">
             <div>
                 <div className={styles.centered2}>
                     <div className="max-w-78 mb-5">
@@ -85,7 +85,7 @@ const Header = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <div id="start" className="fixed top-0 border-b-1 border-gray-900 w-full bg-gradient-to-b from-black to-transparent">
+        <div className="fixed top-0 border-b-1 border-gray-900 w-full bg-gradient-to-b from-black to-transparent">
             <div className=" grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
                 <h1 className="text-white font-mono text-s md:text-lg lg:text-3xl justify-self-center p-7 md:pl-33">&lt;David19_/&gt;</h1>
                 <div className="hidden md:block"></div>
