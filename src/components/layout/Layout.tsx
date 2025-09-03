@@ -1,9 +1,11 @@
 import styles from "./Layout.module.css"
+import { useState } from "react"
 
 export const Layout = () => {
     return (
         <div className="bg-black">
             <div className={styles.centered}>
+                <Header/>
                 <Card/>
             </div>
         </div>
@@ -18,13 +20,13 @@ const Card = () => {
                     <div className="max-w-78 mb-5">
                         <img src="/images/WhatsApp Image 2025-08-31 at 20.29.51.jpeg" className=" outline-1 outline-stone-900 border-b-1 border-gray-400 shadow-lg shadow-gray-800"></img>
                     </div>
-                    <div className="grid-rows-2 max-w-120 max-h-78 justify-self-start">
+                    <div className="grid-rows-2 max-w-120 max-h-78 md:ml-4 lg:justify-self-start justify-self-center">
                         <p className="text-white text-xs md:text-s lg:text-xl pl-5 pr-2 pt-1 pb-3 mb-5 font-mono  outline-1 outline-stone-900 shadow-lg shadow-gray-900 ">&lt;HI THERE WORLD IM HERE/&gt;</p>
-                        <p className="text-gray-100 text-xs md:text-s lg:text-xl pl-5 pt-3 pb-3 font-extralight outline-1 outline-stone-900 shadow-lg shadow-gray-900 border-b-1 border-gray-400">/ backend dev with good taste in front<br/><br/>/ currently studying Software Engineering in Universidad de Córdoba (Spain)<br/><br/>/ love music and vgames<br/><br/>/ minimalist enjoyer</p>
+                        <p className="text-gray-100 text-xs md:text-s lg:text-xl pl-5 pt-3 pb-3 font-extralight outline-1 outline-stone-900 shadow-lg shadow-gray-900 border-b-1 border-gray-400">/ backend dev with good taste in front<br/><br/>/ currently studying Software Engineering in Universidad de Córdoba (Spain)<br/><br/>/ love music and vgames<br/><br/>/ colours enjoyer</p>
                     </div>
                 </div>
             </div>
-            <div className={styles.centered3}>
+            <div id="about-me" className={styles.centered3}>
                 <div className="mt-30 max-w-7/8 shadow-lg shadow-gray-900 justify-self-center ">
                     <p className="text-white font-mono text-xs md:text-s lg:text-xl justify-self-start pb-2 border-b-2 mb-5 border-gray-200">&lt;ABOUT ME/&gt;</p>
                     <p className="text-gray-400 text-xs md:text-s lg:text-xl outline-1 outline-stone-900 justify-self-start p-2">
@@ -51,7 +53,7 @@ const Card = () => {
             <div className={styles.centered3}>
                 <div className="mt-30 max-w-16/17 justify-self-center">
                     <p className="text-white font-mono text-xs md:text-s lg:text-xl justify-self-start p-2 pb-[5%] border-b-1 border-gray-200">&lt;FUCK LA HUELLA DIGITAL/&gt;</p>
-                    <div className={styles.centered4}>
+                    <div id="contact" className={styles.centered4}>
                         <div className="w-[80%] max-w-10 in-hover:shadow-2xl hover:shadow-white">
                             <a href="https://www.instagram.com/davd.sanchz/" target="blank">
                                 <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/instagram-white-icon.png" alt="ig"/>
@@ -76,5 +78,38 @@ const Card = () => {
                 </div>
             </div>
         </div>
+    )
+}
+
+const Header = () => {
+    const [open, setOpen] = useState(false)
+
+    return (
+        <div id="start" className="border-b-1 border-gray-900 w-full">
+            <div className=" grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
+                <h1 className="text-white font-mono text-s md:text-lg lg:text-3xl justify-self-center p-7">&lt;David19_/&gt;</h1>
+                <div className="hidden md:block"></div>
+                <div className="ml-20 lg:max-w-15 lg:max-h-15 max-w-10 md:max-h-10 justify-self-center self-center">
+                    <button onClick={() => setOpen(!open)}>
+                        <img src="https://i0.wp.com/benjaminmarcello.nl/wp-content/uploads/2021/12/menu-icon-PNG-1.png?fit=500%2C500&ssl=1" alt="menuicon"/>
+                        {open ? "" : ""}
+                    </button>
+                    {open && <Menu/>}
+                </div>
+            </div>
+        </div>
+    )
+}
+
+const Menu = () =>{
+    return (
+        <div className="fixed top-20 md:top-21 lg:top-23 right-0 h-full w-50 lg:w-1/8 bg-gradient-to-br from-black to-transparent shadow-lg border-l-1 border-gray-900 p-4">
+            <h2 className="text-lg font-semibold text-white mb-4">Menu</h2>
+            <ul className="space-y-2">
+                <li><a href="#start" className="text-gray-400 hover:text-white">Start</a></li>
+                <li><a href="#about-me" className="text-gray-400 hover:text-white">About me</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-white">Contact me</a></li>
+            </ul>
+      </div>
     )
 }
