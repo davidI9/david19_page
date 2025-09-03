@@ -86,7 +86,7 @@ const Header = () => {
 
     return (
         <div id="start" className="fixed top-0 border-b-1 border-gray-900 w-full bg-gradient-to-b from-black to-transparent">
-            <div onClick={open ? (() => setOpen(!open)): (() => setOpen(!open))} className=" grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
+            <div className=" grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
                 <h1 className="text-white font-mono text-s md:text-lg lg:text-3xl justify-self-center p-7 md:pl-33">&lt;David19_/&gt;</h1>
                 <div className="hidden md:block"></div>
                 <div className="ml-20 lg:max-w-15 lg:max-h-15 max-w-10 md:max-h-10 justify-self-center md:mr-10 self-center">
