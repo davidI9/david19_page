@@ -1,34 +1,25 @@
-import styles from "./Layout.module.css"
-import { useState } from "react"
+import styles from "./Card.module.css"
 
-export const Layout = () => {
-    return (
-        <div id="start" className="bg-black">
-            <div className={styles.centered}>
-                <Header/>
-                <Card/>
-            </div>
-        </div>
-    )
-}
 
-const Card = () => {
+export const Card = () => {
     return (
         <div className="outline-1 outline-stone-900 w-4/4 md:w-3/4 lg:w-3/4 shadow-2xl pt-35">
+
             <div>
                 <div className={styles.centered2}>
-                    <div className="max-w-78 mb-5">
-                        <img src="/images/WhatsApp Image 2025-08-31 at 20.29.51.jpeg" className=" outline-1 outline-stone-900 border-b-1 border-gray-400 shadow-lg shadow-gray-800"></img>
+                    <div className="max-w-74 mb-5">
+                        <img src="/images/yo.jpeg" alt="/images/sans.png" className=" outline-1 outline-stone-900 border-b-1 border-gray-400 shadow-lg shadow-gray-800 opacity-100"></img>
                     </div>
                     <div className="grid-rows-2 max-w-120 max-h-78 md:ml-4 lg:justify-self-start justify-self-center">
-                        <p className="text-white text-xs md:text-s lg:text-xl pl-5 pr-2 pt-1 pb-3 mb-5 font-mono  outline-1 outline-stone-900 shadow-lg shadow-gray-900 ">&lt;HI THERE WORLD IM HERE/&gt;</p>
+                        <p className="text-white text-xs md:text-s lg:text-xl pl-5 pr-2 pt-1 pb-3 mb-5 font-mono tracking-widest outline-1 outline-stone-900 shadow-lg shadow-gray-900 ">&lt;HI THERE WORLD/&gt;</p>
                         <p className="text-gray-100 text-xs md:text-s lg:text-xl pl-5 pt-3 pb-3 font-extralight outline-1 outline-stone-900 shadow-lg shadow-gray-900 border-b-1 border-gray-400">/ backend dev with good taste in front<br/><br/>/ currently studying Software Engineering in Universidad de Córdoba (Spain)<br/><br/>/ love music and vgames<br/><br/>/ colours enjoyer</p>
                     </div>
                 </div>
             </div>
+
             <div id="about-me" className={styles.centered3}>
                 <div className="mt-30 max-w-7/8 shadow-lg shadow-gray-900 justify-self-center ">
-                    <p className="text-white font-mono text-xs md:text-s lg:text-xl justify-self-start pb-2 border-b-2 mb-5 border-gray-200">&lt;ABOUT ME/&gt;</p>
+                    <p className="text-white font-mono tracking-widest text-xs md:text-s lg:text-xl justify-self-start pb-2 border-b-2 mb-5 border-gray-200">&lt;ABOUT ME/&gt;</p>
                     <p className="text-gray-400 text-xs md:text-s lg:text-xl outline-1 outline-stone-900 justify-self-start p-2">
                         Hi there, my name is David...
                         <br/><br/>
@@ -40,19 +31,31 @@ const Card = () => {
                         I've participated so much that they gave me a spot in the team of coordination, in order to help with the organization of the activities.
                         I suggest you to check out some of the ASL's iniciatives such as the <a href="https://salmorejo.tech/2025/" target="blank" className="text-white hover:text-red-300">SalmorejoTech</a> event!
                         <br/><br/>
-                        For now I am keen on keeping up with the pace of the career while I develop my skills on backend development (even tho this web is purely front and actually done by me...).
+                        For now I am keen on keeping up with the pace of the career while I develop my skills on software development.
                         <br/><br/>
+                    </p>
+                </div>
+            </div>
+
+            <div id="skills" className={styles.centered3}>
+                <div className="mt-30 max-w-7/8 shadow-lg shadow-gray-900 justify-self-center">
+                    <p className="text-white font-mono tracking-widest text-xs md:text-s lg:text-xl justify-self-start pb-2 border-b-2 mb-5 border-gray-200">&lt;SKILLS/&gt;</p>
+                    <p className="text-gray-400 text-xs md:text-s lg:text-xl outline-1 outline-stone-900 justify-self-start p-2">
                         Among some of my skills, I am used to work with <text className="text-white text-xs md:text-s lg:text-xl">Python, C, C++, Javascript/Typescript</text> and the <text className="text-white text-xs md:text-s lg:text-xl">CSS+HTML</text> webpack, also I ve tasted  <text className="text-white text-xs md:text-s lg:text-xl">React, Tailwindcss, Django</text> and some other frameworks.
-                        But I must say that my most powerfull traits are my proactivity and leadership, I am always thinking on things to do in order to succed in what I want to achieve,
+                        <br/><br/>
+                        I am also experienced in <text className="text-white text-xs md:text-s lg:text-xl">clean architecture principles and DDD design</text>, I have some projects which implements all the previous mentioned knowledge in my github. 
+                        <br/><br/>
+                        But I must say that my most powerfull traits are my <text className="text-white text-xs md:text-s lg:text-xl">proactivity and leadership</text>, I am always thinking on things to do in order to succed in what I want to achieve,
                         always trying to take a logical perspective.
                         <br/><br/>
                         I am leaving you my social media and github below, where you'll be able to find some of the things I've been doing, there are so many things coming in the future... Hope you like my work and feel free to contact me for anything!
                     </p>
                 </div>
             </div>
+
             <div className={styles.centered3}>
                 <div className="mt-30 max-w-16/17 justify-self-center">
-                    <p className="text-white font-mono text-xs md:text-s lg:text-xl justify-self-start p-2 pb-[5%] border-b-1 border-gray-200">&lt;FUCK LA HUELLA DIGITAL/&gt;</p>
+                    <p className="text-white font-mono tracking-widest text-xs md:text-s lg:text-xl justify-self-start p-2 pb-[5%] border-b-1 border-gray-200">&lt;HUELLA DIGITAL/&gt;</p>
                     <div id="contact" className={styles.centered4}>
                         <div className="w-[80%] max-w-10 in-hover:shadow-2xl hover:shadow-white">
                             <a href="https://www.instagram.com/davd.sanchz/" target="blank">
@@ -78,38 +81,5 @@ const Card = () => {
                 </div>
             </div>
         </div>
-    )
-}
-
-const Header = () => {
-    const [open, setOpen] = useState(false)
-
-    return (
-        <div className="fixed top-0 border-b-1 border-gray-900 w-full bg-gradient-to-b from-black to-transparent">
-            <div className=" grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2">
-                <h1 className="text-white font-mono text-s md:text-lg lg:text-3xl justify-self-center p-7 md:pl-33">&lt;David19_/&gt;</h1>
-                <div className="hidden md:block"></div>
-                <div className="ml-20 lg:max-w-15 lg:max-h-15 max-w-10 md:max-h-10 justify-self-center md:mr-10 self-center">
-                    <button onClick={() => setOpen(!open)}>
-                        <img src="https://i0.wp.com/benjaminmarcello.nl/wp-content/uploads/2021/12/menu-icon-PNG-1.png?fit=500%2C500&ssl=1" alt="menuicon"/>
-                        {open ? "" : ""}
-                    </button>
-                    {open && <Menu/>}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-const Menu = () =>{
-    return (
-        <div className="fixed top-20 md:top-21 lg:top-23 right-0 h-full w-50 lg:w-1/8 bg-gradient-to-br from-black to-transparent shadow-lg border-l-1 border-gray-900 p-4">
-            <h2 className="text-lg font-semibold text-white mb-4">Menu</h2>
-            <ul className="space-y-2">
-                <li><a href="#start" className="text-gray-400 hover:text-white">Start</a></li>
-                <li><a href="#about-me" className="text-gray-400 hover:text-white">About me</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white">Contact me</a></li>
-            </ul>
-      </div>
     )
 }

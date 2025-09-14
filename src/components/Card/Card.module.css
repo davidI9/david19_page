@@ -1,0 +1,26 @@
+.centered2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    padding: 2rem;
+  }
+
+@media (max-width: 800px) {
+    .centered2 {
+      grid-template-columns:1fr;
+    }
+}
+
+.centered3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    padding: 2rem;
+  }
+
+.centered4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    justify-items: center;
+    padding: 2rem;
+  }  
