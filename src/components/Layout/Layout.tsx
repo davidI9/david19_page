@@ -5,10 +5,13 @@ import { Card } from "../Card/Card"
 export const Layout = () => {
     return (
         <div id="start" className="bg-black">
-            <div className={styles.centered}>
-                <Header/>
-                <Card/>
+            <div className={styles.starredBG}>
+                <div className={styles.centered}>
+                    <Header/>
+                    <Card/>
+                </div>
             </div>
+
         </div>
     )
 }
