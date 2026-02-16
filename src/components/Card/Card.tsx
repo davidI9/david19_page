@@ -8,11 +8,11 @@ export const Card = () => {
             <div>
                 <div className={styles.centered2}>
                     <div className="max-w-74 mb-5">
-                        <img src="/images/yo.jpeg" alt="/images/sans.png" className=" outline-1 outline-stone-900 border-b-1 border-gray-400 shadow-lg shadow-gray-800 opacity-100"></img>
+                        <img src="/images/yo.jpeg" alt="/images/sans.png" className=" outline-1 outline-stone-900 border-b border-gray-400 shadow-lg shadow-gray-800 opacity-100"></img>
                     </div>
                     <div className="grid-rows-2 max-w-120 max-h-78 md:ml-4 lg:justify-self-start justify-self-center">
                         <p className="text-white text-xs md:text-s lg:text-xl pl-5 pr-2 pt-1 pb-3 mb-5 font-mono tracking-widest outline-1 outline-stone-900 shadow-lg shadow-gray-900 ">&lt;HI THERE WORLD/&gt;</p>
-                        <p className="text-gray-100 text-xs md:text-s lg:text-xl pl-5 pt-3 pb-3 font-extralight outline-1 outline-stone-900 shadow-lg shadow-gray-900 border-b-1 border-gray-400">/ backend dev with good taste in front<br/><br/>/ currently studying Software Engineering in Universidad de Córdoba (Spain)<br/><br/>/ love music and vgames<br/><br/>/ colours enjoyer</p>
+                        <p className="text-gray-100 text-xs md:text-s lg:text-xl pl-5 pt-3 pb-3 font-extralight outline-1 outline-stone-900 shadow-lg shadow-gray-900 border-b border-gray-400">/ backend dev with good taste in front<br/><br/>/ currently studying Software Engineering in Universidad de Córdoba (Spain)<br/><br/>/ love music and vgames<br/><br/>/ colours enjoyer</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@ export const Card = () => {
 
             <div className={styles.centered3}>
                 <div className="mt-30 max-w-16/17 justify-self-center">
-                    <p className="text-white font-mono tracking-widest text-xs md:text-s lg:text-xl justify-self-start p-2 pb-[5%] border-b-1 border-gray-200">&lt;HUELLA DIGITAL/&gt;</p>
+                    <p className="text-white font-mono tracking-widest text-xs md:text-s lg:text-xl justify-self-start p-2 pb-[5%] border-b border-gray-200">&lt;HUELLA DIGITAL/&gt;</p>
                     <div id="contact" className={styles.centered4}>
                         <div className="w-[80%] max-w-10 in-hover:shadow-2xl hover:shadow-white">
                             <a href="https://www.instagram.com/davd.sanchz/" target="blank">
