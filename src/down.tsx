@@ -7,7 +7,6 @@ export const Down = () => {
                 </p>
                 <img src="/images/cat-computer.gif" alt="gato" />
             </div>
-
         </div>
     )
 }
