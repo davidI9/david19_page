@@ -5,7 +5,7 @@ export const Down = () => {
                 <p className="content-center">
                     estoy chetando la pagina // the page is horrendous and I am working on it!
                 </p>
-                <img src="../public/images/cat-computer.gif" alt="gato" />
+                <img src="/images/cat-computer.gif" alt="gato" />
             </div>
 
         </div>
