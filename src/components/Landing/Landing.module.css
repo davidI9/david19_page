@@ -1,0 +1,24 @@
+.firstlayer{
+    background: linear-gradient(-45deg, rgb(117, 124, 136), rgb(255, 255, 255));    
+}
+
+.secondlayer{
+    background: linear-gradient( rgba(0, 0, 255, 0.75), rgba(212, 212, 212, 0.75));
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+.thirdlayer{
+    background: linear-gradient( blue 80%, rgb(1, 21, 75));
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+.text{
+    display: flex;
+    font-size: 14vw;
+    font-weight: 900;
+    letter-spacing: -20px;
+    text-align: left;
+    justify-items: baseline;
+    transform: scaleY(1.4);
+    font-style: italic;
+}
