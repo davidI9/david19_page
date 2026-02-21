@@ -9,7 +9,13 @@ export const LandingLayout = () => {
 
             <div className={`${styles.secondlayer} w-full h-screen aspect-square`}>
                 <div className={`${styles.thirdlayer} w-full h-screen`}>
-            
+                    <div>.</div>
+                    <div>
+                        <div className={`${styles.optText}`}>SKILLS</div>
+                        <div className={`${styles.optText}`}>PROYECTS</div>
+                        <div className={`${styles.optText}`}>PROFILE</div>
+                        <div className={`${styles.optText}`}>CONTACT</div>
+                    </div>
                 </div>
             </div>
         </div>

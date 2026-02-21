@@ -8,8 +8,10 @@
 }
 
 .thirdlayer{
-    background: linear-gradient( blue 80%, rgb(1, 21, 75));
+    background: linear-gradient( rgb(11, 110, 224) 65%, rgb(1, 21, 75));
     clip-path: polygon(45% 0, 100% 0, 100% 100%, 10% 100%);
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 .text{
@@ -21,4 +23,16 @@
     justify-items: baseline;
     transform: scaleY(1.4);
     font-style: italic;
+}
+
+.optText{
+    display: flex;
+    font-size: 6vw;
+    font-weight: 900;
+    letter-spacing: -20px;
+    text-align: left;
+    justify-items: baseline;
+    transform: scaleY(1.4);
+    font-style: italic;
+    color: rgb(137, 202, 255);
 }
