@@ -11,10 +11,10 @@ export const LandingLayout = () => {
                 <div className={`${styles.thirdlayer} w-full h-screen`}>
                     <div>.</div>
                     <div>
-                        <div className={`${styles.optText}`}>SKILLS</div>
-                        <div className={`${styles.optText}`}>PROYECTS</div>
-                        <div className={`${styles.optText}`}>PROFILE</div>
-                        <div className={`${styles.optText}`}>CONTACT</div>
+                        <div className={`${styles.optText} rotate-357`}>SKILLS</div>
+                        <div className={`${styles.optText} rotate-1 ml-5 mt-3`}>PROYECTS</div>
+                        <div className={`${styles.optText} rotate-3 ml-7 mt-3`}>PROFILE</div>
+                        <div className={`${styles.optText} rotate-5 mt-2`}>CONTACT</div>
                     </div>
                 </div>
             </div>
