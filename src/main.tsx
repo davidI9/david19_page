@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-//import { LandingLayout } from './components/Landing/Landing-layout'
-import { Layout } from './components/Layout/Layout'
+import { LandingLayout } from './components/Landing/Landing-layout'
+//import { Layout } from './components/Layout/Layout'
 //import { Down } from './down'
 
 //uncomment when web is ready and comment the other createRoot also uncomment the layout import
-/*createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <LandingLayout/>
   </StrictMode>
@@ -17,10 +17,3 @@ import { Layout } from './components/Layout/Layout'
     <Down/>
   </StrictMode>,
 )*/
-
-//old version of the web
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Layout/>
-  </StrictMode>,
-)
