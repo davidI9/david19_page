@@ -1,0 +1,130 @@
+.back{
+    background: linear-gradient(
+        -45deg, 
+        #020617, /* Azul casi negro */
+        #1e3a8a, /* Azul profundo */
+        #06b6d4, /* Cian brillante */
+        #0f172a  /* Azul pizarra oscuro */
+    );
+    display: grid;
+    grid-template-columns: 45% 55%;
+    /* 2. Hacemos el fondo GIGANTE (400% de su tamaño normal) */
+    background-size: 400% 400%;
+  
+  /* 3. Le aplicamos la animación que creamos abajo */
+  /* '15s' es lo que tarda. 'ease' lo hace suave. 'infinite' para que no pare nunca. */
+    animation: moverLiquido 30s ease infinite;
+     /*w-full h-screen grid-cols-2 grid*/
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/* Las instrucciones de movimiento */
+@keyframes moverLiquido {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.backButton {
+  width: 25vw; /* Tamaño considerable del contenedor */
+  height: 25vw;
+  background: transparent;
+  border: none;
+  overflow: hidden; /* Importante para cortar el círculo sobrante */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* AQUÍ ESTÁ EL SEMICÍRCULO GIGANTE */
+.backButton::before {
+  content: '';
+  position: absolute;
+  /* Lo hacemos GIGANTE, el doble del contenedor */
+  width: 200%; 
+  height: 200%;
+  
+  /* Lo movemos para que se salga de la pantalla por arriba e izquierda */
+  top: -100%; 
+  left: -100%;
+  
+  /* Hacemos el círculo con borde cian y fondo semi-transparente */
+  border-radius: 90%;
+  border: 50px solid rgb(127, 192, 245); /* Tu color cian */
+  background: rgb(255, 255, 255); /* Fondo muy sutil */
+  
+  z-index: -1; /* Lo ponemos detrás del texto */
+  
+  /* Para que el hover sea suave */
+  transition: all 0.3s ease;
+}
+
+/* Tu estilo de texto (puedes reutilizar el de optText si quieres) */
+.backText {
+  color: rgb(11, 69, 80);
+  font-weight: 900;
+  font-size: 6vw;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-top: -100px;
+}
+
+/* Efecto hover guapo */
+.backButton:hover::before {
+  background: rgba(180, 221, 250, 0.884); /* Se ilumina el fondo */
+}
+
+.optText {
+    display: flex;
+    font-size: 4vw;
+    font-weight: 900;
+    letter-spacing: -6px;
+    text-align: left;
+    justify-items: baseline;
+    transform: scaleY(1.4);
+    font-style: italic;
+    color: rgb(137, 202, 255);
+    transition: all 0.2s ease; 
+}
+
+.optText:hover {
+    transform: scaleY(1.3);
+    font-size: 5vw;
+    color: rgb(27, 38, 48);
+    letter-spacing: -9px;
+    cursor: pointer;
+}
+
+.textBorder{
+  display: grid;
+  width: 100%;
+}
+
+.section1{
+  clip-path: polygon(0 0, 0 60%, 6% 100%, 100% 100%, 100% 0);
+  background: rgb(255, 255, 255);
+}
+
+.section2{
+  clip-path: polygon(0 0, 15% 100%, 100% 100%, 100% 0);
+  background: black;
+  width: 100%;
+  height: 100%;
+  font-size: 3vw;
+  font-weight: 900;
+  text-align: center;
+  justify-items: baseline;
+  font-style: italic;
+  color: rgb(137, 202, 255);
+}
