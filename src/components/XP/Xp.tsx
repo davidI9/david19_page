@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Skills.module.css";
+import styles from "./Xp.module.css";
 import { Link } from "react-router-dom";
 
 const BackendComponent = () => {
@@ -42,7 +42,7 @@ const FrontendComponent = () => <div className="grid h-full">
                                 </div>;
 const AIComponent = () => <div>Contenido de AI</div>;
 
-export const Skills = () => {
+export const XP = () => {
     // 1. Objeto con la información (tu base de datos en miniatura)
     const vistaSkills = {
         BACKEND: <BackendComponent />,

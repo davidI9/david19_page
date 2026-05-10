@@ -1,0 +1,35 @@
+.back{
+    background: linear-gradient(
+        -45deg, 
+        #000000, /* Azul casi negro */
+        #8a1e1e, /* Azul profundo */
+        #d40606, /* Cian brillante */
+        #2a0f0f  /* Azul pizarra oscuro */
+    );
+    display: grid;
+    grid-template-columns: 45% 55%;
+    /* 2. Hacemos el fondo GIGANTE (400% de su tamaño normal) */
+    background-size: 400% 400%;
+  
+  /* 3. Le aplicamos la animación que creamos abajo */
+  /* '15s' es lo que tarda. 'ease' lo hace suave. 'infinite' para que no pare nunca. */
+    animation: moverLiquido 30s ease infinite;
+     /*w-full h-screen grid-cols-2 grid*/
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/* Las instrucciones de movimiento */
+@keyframes moverLiquido {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

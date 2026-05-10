@@ -1,24 +1,24 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-//import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 //import { LandingLayout } from './components/Landing/Landing-layout'
 //import { Layout } from './components/Layout/Layout'
-import { Down } from './down'
-//import AppRoutes from './AppRoutes'; 
+//import { Down } from './down'
+import AppRoutes from './AppRoutes'; 
 import './globals.css';
 
 //uncomment when web is ready and comment the other createRoot also uncomment the layout import
-/* createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <AppRoutes/>
     </BrowserRouter>
   </StrictMode>
-)*/
+)
 
 //uncomment whenever the page is under maintainance, also uncomment the down import 
-createRoot(document.getElementById('root')!).render(
+/* createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Down/>
   </StrictMode>,
-)
+)*/
